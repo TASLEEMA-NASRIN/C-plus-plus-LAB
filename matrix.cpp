@@ -94,13 +94,15 @@ int main()
     for (int i = 0; i < r2; i++)
         for (int j = 0; j < c2; j++)
             cin >> B[i][j];
-
+    
+    while(1){
     cout << "\n----- MATRIX OPERATIONS -----\n";
     cout << "1. Addition\n";
     cout << "2. Subtraction\n";
     cout << "3. Multiplication\n";
     cout << "4. Transpose of Matrix A\n";
     cout << "5. Transpose of Matrix B\n";
+    cout << "6. Exit \n";
     cout << "Enter your choice: ";
     cin >> choice;
 
@@ -131,10 +133,14 @@ int main()
         case 5:
             transpose(B, r2, c2);
             break;
+        case 6:
+            return 0;
 
         default:
             cout << "\nInvalid choice!\n";
     }
+
+}
 
     return 0;
 }
