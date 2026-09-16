@@ -14,6 +14,7 @@ void addition(int A[10][10], int B[10][10], int r, int c)
     {
         for (int j = 0; j < c; j++)
             cout << C[i][j] << " ";
+        
         cout << endl;
     }
 }
